@@ -4,6 +4,9 @@
 # testing
 /coverage
 
+# Jetbrains IDE files
+.idea/
+
 # production
 /build
 
