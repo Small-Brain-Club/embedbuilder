@@ -4,9 +4,9 @@ export default class Header extends React.PureComponent {
   render = () => (
     <header>
       <div id="back-to-home">
-        <a href="https://bastion.traction.one">&larr;</a>
+        <a href="https://smallbrain.club">&larr;</a>
       </div>
-      <div title="Graphically create Bastion Embed Objects, and use it with various commands of Bastion.">Bastion Embed Builder</div>
+      <div title="Create discord embeds for the welcomer feature in the Invisibility bot.">Invisibility Embed Builder</div>
     </header>
   );
 }

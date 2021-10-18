@@ -120,12 +120,11 @@ class Output extends React.Component {
     }
     else if (window.getSelection) {
       let range = document.createRange();
-      range.selectNode(element);
-      window.getSelection().addRange(range);
+      let selection = window.getSelection();    // Save the selection.
+      range.selectNodeContents(element);
+      selection.removeAllRanges();          // Remove all ranges from the selection.
+      selection.addRange(range);
       document.execCommand('Copy');
-    }
-    else {
-      console.error('Unable to automatically copy the output, please copy it manually and report the issue on GitHub: https://github.com/TheBastionBot/embedbuilder/issues/new?title=The+copy+button+is+not+working');
     }
   }
 
